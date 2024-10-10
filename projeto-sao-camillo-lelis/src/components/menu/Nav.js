@@ -4,7 +4,7 @@ export default function Nav() {
       <a className="btn" href="">
         Programas
       </a>
-      <a className="btn" href="">
+      <a className="btn" href="#sobre">
         Sobre Nós
       </a>
       <a className="btn" href="">
