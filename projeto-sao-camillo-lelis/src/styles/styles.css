@@ -1,9 +1,12 @@
+* {
+  max-width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
 }
 
 .menu {
@@ -156,4 +159,44 @@ body {
 
 .container-doacoes > div > h1 {
   text-align: center;
+}
+
+.container-valores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 70vh;
+  background-color: #a61a19;
+  color: #f7f7f7;
+}
+
+.container-valores > h2 {
+  margin: 0;
+}
+
+.valores {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.valor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 20vw;
+}
+
+.valor > h3 {
+  margin-bottom: 1px;
+}
+
+.valor > p {
+  margin-top: 1px;
+  font-size: 0.7rem;
 }
