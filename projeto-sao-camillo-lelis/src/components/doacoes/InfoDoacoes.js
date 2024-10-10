@@ -1,6 +1,6 @@
 export default function InfoDoacoes() {
   return (
-    <div className="container-doacoes">
+    <div className="container-doacoes" id="doar">
       <div className="container-doacoes-info">
         <h1 className="container-doacoes-titulo">
           Ajude a transformar vidas com a sua doação!

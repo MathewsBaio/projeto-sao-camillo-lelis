@@ -1,8 +1,8 @@
 export default function SobreNos() {
   return (
-    <div className="container-sobre">
+    <div className="container-sobre" id="sobre">
       <img src="/placeholders/img.jpg" />
-      <div id="sobre">
+      <div>
         <h1>Sobre Nós</h1>
         <p>
           Fundada em 16 de outubro de 1971, a Casa São Camilo de Lelis é uma
