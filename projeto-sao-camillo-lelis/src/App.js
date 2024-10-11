@@ -4,6 +4,7 @@ import NossasHistorias from "./components/historias/NossasHistorias";
 import Menu from "./components/menu/Menu";
 import SobreNos from "./components/SobreNos/SobreNos";
 import NossosValores from "./components/valores/NossosValores";
+import Card from "./components/card/Card";
 import "./styles/styles.css";
 
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
           logo="/icons/WhatsApp.webp"
         />
       </div>
+      <Card titulo="Bazar" paragrafo="teste" />
     </div>
   );
 }

@@ -1,10 +1,20 @@
-import { useState } from "react"
+import { useState } from "react";
+import "../../styles/card.css";
 
+export default function Card({ titulo, paragrafo }) {
+  const [ativo, setAtivo] = useState(false);
 
-export default function Card({titulo, paragrafo}) {
-    const [ativo, setAtivo] = useState(false)
-
-    return <div>
-        {ativo ? (<p>{paragrafo}</p>) : (<h1>{titulo}</h1>)}
+  return (
+    <div
+      className="card"
+      onMouseEnter={() => {
+        setAtivo(true);
+      }}
+      onMouseLeave={() => {
+        setAtivo(false);
+      }}
+    >
+      {ativo ? <p>{paragrafo}</p> : <h1>{titulo}</h1>}
     </div>
+  );
 }
