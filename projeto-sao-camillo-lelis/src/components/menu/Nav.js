@@ -8,7 +8,7 @@ export default function Nav() {
 
   return (
     <div className="nav">
-      <a className="btn" href="">
+      <a className="btn" href="#programas">
         Programas
       </a>
       <a className="btn" href="#sobre">

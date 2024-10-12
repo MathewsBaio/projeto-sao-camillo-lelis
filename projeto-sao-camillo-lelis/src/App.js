@@ -4,8 +4,8 @@ import NossasHistorias from "./components/historias/NossasHistorias";
 import Menu from "./components/menu/Menu";
 import SobreNos from "./components/SobreNos/SobreNos";
 import NossosValores from "./components/valores/NossosValores";
-import Card from "./components/card/Card";
 import "./styles/styles.css";
+import Cards from "./components/cards/CardsDesktop";
 
 export default function App() {
   const handleNav = () => {
@@ -21,6 +21,7 @@ export default function App() {
       <InfoDoacoes />
       <SobreNos />
       <NossosValores />
+      <Cards />
       <NossasHistorias />
       <div className="side-menu">
         <Btn action={handleNav} alt="teste" logo="/icons/arrow.png" />
@@ -32,7 +33,6 @@ export default function App() {
           logo="/icons/WhatsApp.webp"
         />
       </div>
-      <Card titulo="Bazar" paragrafo="teste" />
     </div>
   );
 }
