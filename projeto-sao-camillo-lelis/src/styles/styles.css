@@ -64,7 +64,7 @@ body {
   align-items: center;
   gap: 25px;
   color: #f7f7f7;
-  font-size: 0.6rem;
+  font-size: 1rem;
   margin-right: 1rem;
 }
 
@@ -212,4 +212,75 @@ body {
 .valor > p {
   margin-top: 1px;
   font-size: 0.7rem;
+}
+
+.container-footer {
+  width: 100vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #a61a19;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  width: 85vw;
+}
+
+.footer-logo > img {
+  width: 10vw;
+}
+
+.footer-list > dl {
+  list-style: none;
+}
+
+.footer-list dl > li {
+  margin-top: 15px;
+}
+
+.separator {
+  width: 85vw;
+  border-style: solid;
+  border-color: #211f1f;
+}
+
+.footer-social-media {
+  width: 85vw;
+  height: 5vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.footer-list .btn {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-list .btn:hover {
+  cursor: pointer;
+  border-bottom: solid 2px #211f1f;
+}
+
+.social-icons > a {
+  margin: 0px 5px;
+}
+
+.social-icons .btn {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-icons .btn:hover {
+  cursor: pointer;
+  border: solid 2px transparent;
 }
