@@ -120,7 +120,7 @@ body {
 .container-sobre > img {
   z-index: 10;
   width: 30vw;
-  height: 90vh;
+  max-height: 90vh;
   position: relative;
 }
 
@@ -153,7 +153,7 @@ body {
 
 .container-doacoes > img {
   width: 30vw;
-  height: 60vh;
+  max-height: 60vh;
   position: relative;
 }
 
