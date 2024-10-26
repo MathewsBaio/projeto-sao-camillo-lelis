@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -7,8 +8,36 @@ import "swiper/css/pagination";
 import "../../styles/carrossel.css";
 
 export default function NossasHistorias() {
+  const [size, setSize] = useState(100);
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Zoom começa quando 10% do componente é visível
+  });
+
+  useEffect(() => {
+    if (inView) {
+      const handleScroll = () => {
+        const newSize = 100 + (window.scrollY - window.innerHeight) * 0.05;
+        setSize(newSize);
+      };
+
+      // Adiciona o evento de rolagem enquanto o componente está visível
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll); // Limpeza
+      };
+    } else {
+      setSize(100); // Reseta o zoom ao sair da visualização
+    }
+  }, [inView]);
+
   return (
-    <div className="container-historias" id="historias">
+    <div
+      ref={ref}
+      className="container-historias"
+      style={{ backgroundSize: `${size}vw ${size}vh` }}
+      id="historias"
+    >
       <h1>Nossas Histórias</h1>
       <div className="container-carrossel">
         <Swiper

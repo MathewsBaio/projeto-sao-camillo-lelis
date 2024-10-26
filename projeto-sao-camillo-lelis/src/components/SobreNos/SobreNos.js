@@ -1,6 +1,36 @@
-export default function SobreNos() {
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+
+export default function SobreNos({ scrollY }) {
+  const [size, setSize] = useState(100);
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Zoom começa quando 10% do componente é visível
+  });
+
+  useEffect(() => {
+    if (inView) {
+      const handleScroll = () => {
+        const newSize = 100 + window.scrollY * 0.05; // Ajuste a velocidade do zoom conforme necessário
+        setSize(newSize);
+      };
+
+      // Adiciona o evento de rolagem enquanto o componente está visível
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll); // Limpeza
+      };
+    } else {
+      setSize(100); // Reseta o zoom ao sair da visualização
+    }
+  }, [inView]);
   return (
-    <div className="container-sobre" id="sobre">
+    <div
+      ref={ref}
+      className="container-sobre"
+      style={{ backgroundSize: `${size}vw ${size}vh` }}
+      id="sobre"
+    >
       <img src="/placeholders/img.jpg" />
       <div>
         <h1>Sobre Nós</h1>
