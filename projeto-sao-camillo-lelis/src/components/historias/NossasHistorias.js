@@ -9,7 +9,7 @@ import "../../styles/carrossel.css";
 export default function NossasHistorias() {
   return (
     <div className="container-historias" id="historias">
-      <h2>Nossas Histórias</h2>
+      <h1>Nossas Histórias</h1>
       <div className="container-carrossel">
         <Swiper
           modules={[Navigation, Pagination]}

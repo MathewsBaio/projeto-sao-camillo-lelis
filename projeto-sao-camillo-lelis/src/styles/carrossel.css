@@ -25,7 +25,7 @@
 
 .slide-text {
   width: 40vw;
-  font-size: 0.7rem;
+  font-size: 1.1rem;
 }
 
 .container-historias {
@@ -60,7 +60,7 @@
   z-index: 1;
 }
 
-.container-historias > h2 {
+.container-historias > h1 {
   z-index: 10;
   position: relative;
   color: #f7f7f7;
