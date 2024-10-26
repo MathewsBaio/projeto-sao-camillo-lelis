@@ -12,6 +12,10 @@
 
   position: relative;
   overflow: hidden;
+  perspective: 1000px;
+  /* transform-style: preserve-3d; Preserva o efeito 3D */
+  transition: transform 0.9s; /* Duração e suavização da transição */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
 }
 .card::after {
   content: "";
@@ -27,13 +31,17 @@
   z-index: 1;
 }
 
+.card:hover {
+  transform: rotateX(180deg);
+}
+
 .card > h1 {
   font-size: 1rem;
   z-index: 10;
 }
 
 .card > p {
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   z-index: 10;
 }
 
