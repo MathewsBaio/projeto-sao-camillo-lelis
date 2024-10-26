@@ -174,19 +174,20 @@ body {
   margin-left: 10px;
 }
 
-.container-valores {
+.container-nossos-valores {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1rem;
   width: 100vw;
   height: 70vh;
   background-color: #a61a19;
   color: #f7f7f7;
 }
 
-.container-valores > h2 {
-  margin: 0;
+.valores-titles {
+  text-align: center;
 }
 
 .valores {

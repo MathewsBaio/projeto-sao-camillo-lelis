@@ -1,8 +1,11 @@
 export default function NossosValores() {
   return (
-    <div className="container-valores">
-      <h2>NOS AJUDE A TRANSFORMAR VIDAS</h2>
-      <h2>Nossos Valores</h2>
+    <div className="container-nossos-valores">
+      <div className="valores-titles">
+        <h1>NOS AJUDE A TRANSFORMAR VIDAS</h1>
+        <h1>Nossos Valores</h1>
+      </div>
+
       <div className="valores">
         <div className="valor">
           <h3>#VALOR</h3>
