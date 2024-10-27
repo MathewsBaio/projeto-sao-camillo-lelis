@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import fotoDeTodos from "../../assets/img/Foto_de_todos2023.jpg";
 
 export default function SobreNos({ scrollY }) {
   const [size, setSize] = useState(100);
@@ -31,7 +32,7 @@ export default function SobreNos({ scrollY }) {
       style={{ backgroundSize: `${size}vw ${size}vh` }}
       id="sobre"
     >
-      <img src="/placeholders/img.jpg" />
+      <img src={fotoDeTodos} alt="Foto de Todos 2023" />
       <div>
         <h1>Sobre Nós</h1>
         <p>
