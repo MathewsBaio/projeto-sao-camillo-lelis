@@ -8,6 +8,10 @@ export default function Footer() {
         <div className="footer-logo">
           <img src="/placeholders/logo.png" />
         </div>
+        <div>
+          “Nosso compromisso é oferecer acolhimento integral às pessoas em
+          situação de rua, promovendo dignidade e cidadania por meio de ações.”
+        </div>
         <FooterNav />
       </div>
       <div>
