@@ -55,6 +55,7 @@
   text-align: justify;
   gap: 1rem;
   width: 100vw;
+  height: 100vh;
   min-height: 80vh;
   background-color: #f7f7f7;
 }

@@ -7,6 +7,7 @@ import NossosValores from "./components/valores/NossosValores";
 import "./styles/styles.css";
 import Cards from "./components/cards/CardsDesktop";
 import Footer from "./components/footer/Footer";
+import CardsMobile from "./components/cards/CardsMobile";
 
 export default function App() {
   const handleNav = () => {
@@ -34,6 +35,7 @@ export default function App() {
           logo="/icons/WhatsApp.webp"
         />
       </div>
+      <CardsMobile />
       <Footer />
     </div>
   );
