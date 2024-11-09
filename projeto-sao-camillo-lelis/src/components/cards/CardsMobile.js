@@ -33,7 +33,7 @@ export default function CardsMobile() {
   ];
 
   return (
-    <div className="cards">
+    <div className="cardsMobile">
       <Swiper
         modules={[Navigation, Pagination]}
         navigation
