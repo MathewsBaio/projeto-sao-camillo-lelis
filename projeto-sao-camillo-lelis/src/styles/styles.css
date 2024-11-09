@@ -95,7 +95,7 @@ body {
   background-image: url("../../public/backgrounds/sobrenos.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   text-align: justify;
   position: relative;
   overflow: hidden;
@@ -107,7 +107,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background-color: #000000;
   opacity: 0.87;
@@ -319,53 +319,70 @@ body {
     font-size: 0.9rem;
   }
 
-  /* Seções principais */
+  /* Sobre nós */
   .container-sobre {
     flex-direction: column;
   }
 
   .container-sobre > img {
+    margin-top: 8vw;
     width: 80vw;
-    height: auto;
+    min-height: 45vw;
   }
 
   .container-sobre > div {
-    width: 90vw;
+    margin-bottom: 5vw;
+    width: 80vw;
     font-size: 1rem;
   }
 
   /* Banner de doações */
   .container-doacoes {
     flex-direction: column;
-    min-height: 45vh;
+  }
+
+  .container-doacoes > div {
+    width: 80vw;
+    align-items: center;
+    text-align: center;
   }
 
   .container-doacoes > img {
-    width: 70vw;
-    height: auto;
+    width: 60vw;
+    height: 60vh;
   }
 
   .container-doacoes-titulo {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 10vw;
   }
 
   .container-doacoes-texto {
     font-size: 1.2rem;
+    width: 70vw;
+    padding-left: 3vw;
   }
 
   /* Nossos valores */
   .container-nossos-valores {
   }
 
+  .valores-titles {
+    width: 90vw;
+    margin-top: 1rem;
+  }
+
   .valores {
     flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
 
   .valor {
-    width: 80vw;
+    width: 70vw;
     text-align: center;
     font-size: 1rem;
+    border-top: 2px solid black;
   }
 
   /* Rodapé */
