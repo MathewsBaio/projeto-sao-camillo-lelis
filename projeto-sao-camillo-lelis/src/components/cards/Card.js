@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../../styles/card.css";
 
-export default function Card({ titulo, paragrafo }) {
+export default function Card({ titulo, paragrafo, img }) {
   const [ativo, setAtivo] = useState(false);
   const [ePraGirar, setEPraGirar] = useState(false);
 
@@ -30,8 +30,12 @@ export default function Card({ titulo, paragrafo }) {
               transform: "rotateX(360deg)",
               transformStyle: "flat",
               transition: "none",
+              backgroundImage: `url(${img})`,
             }
-          : { transformStyle: "preserve-3d" }
+          : {
+              transformStyle: "preserve-3d",
+              backgroundImage: `url(${img})`,
+            }
       }
     >
       {ativo ? <p>{paragrafo}</p> : <h1>{titulo}</h1>}

@@ -288,6 +288,25 @@ body {
   border: solid 2px transparent;
 }
 
+.principal-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("../../public/img/fototodos2.jpg");
+  /* background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.principal-container > img {
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100%;
+}
+
 /* Estilos gerais de responsividade */
 @media (max-width: 768px) {
   /* Ajusta o menu e a logo */
