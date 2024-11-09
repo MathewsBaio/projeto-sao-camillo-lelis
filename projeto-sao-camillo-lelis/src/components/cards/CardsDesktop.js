@@ -13,7 +13,7 @@ const cardsTop = [
   },
   {
     titulo: "Um Lar",
-    paragrafo: "",
+    paragrafo: "A instituição é um espaço onde nos sentimos seguros, cuidados e amparados, a instituição se propõe a ser esse refúgio para aqueles que mais necessitam.",
   },
 ];
 const cardsBot = [
