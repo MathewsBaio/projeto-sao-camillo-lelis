@@ -306,7 +306,7 @@ body {
 
 .container-footer {
   width: 100vw;
-  height: 15vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -322,6 +322,7 @@ body {
   align-items: center;
   min-height: 20vh;
   width: 85vw;
+  gap: 3vw;
 }
 
 .footer-logo>img {
@@ -349,6 +350,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  padding-bottom: 3vw;
 }
 
 .footer-list .btn {
@@ -443,7 +445,10 @@ body {
 
   .container-doacoes-titulo {
     font-size: 2rem;
-    margin-bottom: 10vw;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    width: 65vw;
+    padding-left: 7vw;
   }
 
   .container-doacoes-texto {
