@@ -368,6 +368,14 @@ body {
     font-size: 1rem;
   }
 
+  .container-nossos-valores {
+    gap: 1rem;
+    width: 100vw;
+    min-height: 85vh;
+    background-color: #a61a19;
+    color: #f7f7f7;
+  }
+
   /* Rodapé */
   .container-footer {
     height: auto;
