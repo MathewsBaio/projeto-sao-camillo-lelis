@@ -8,6 +8,7 @@ import "./styles/styles.css";
 import Cards from "./components/cards/CardsDesktop";
 import Footer from "./components/footer/Footer";
 import CardsMobile from "./components/cards/CardsMobile";
+import Principal from "./components/principal/Principal";
 
 export default function App() {
   const handleNav = () => {
@@ -20,6 +21,7 @@ export default function App() {
   return (
     <div>
       <Menu />
+      <Principal />
       <InfoDoacoes />
       <SobreNos />
       <NossosValores />
