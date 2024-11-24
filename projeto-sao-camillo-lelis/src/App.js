@@ -18,6 +18,12 @@ export default function App() {
     });
   };
 
+  const handleWhatsApp = (phoneNumber, message) => {
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <div>
       <Menu />
@@ -30,10 +36,8 @@ export default function App() {
       <div className="side-menu">
         <Btn action={handleNav} alt="teste" logo="/icons/arrow.png" />
         <Btn
-          action={() => {
-            console.log("teste");
-          }}
-          alt="teste"
+          action={() => handleWhatsApp("553232341676", "Olá, gostaria de mais informações!")}
+          alt="WhatsApp"
           logo="/icons/WhatsApp.webp"
         />
       </div>
