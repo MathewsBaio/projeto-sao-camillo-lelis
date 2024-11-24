@@ -240,8 +240,8 @@ body {
 }
 
 .container-doacoes > img {
-  width: 30vw;
-  height: 500px;
+  width: 20vw;
+  height: 40vh;
   position: relative;
   margin: 1rem;
 }

@@ -8,11 +8,11 @@ export default function Nav() {
 
   return (
     <div className="nav">
-      <a className="btn" href="#programas">
-        Programas
-      </a>
       <a className="btn" href="#sobre">
         Sobre Nós
+      </a>
+      <a className="btn" href="#programas">
+        Programas
       </a>
       <a className="btn" href="#historias">
         Nossas Histórias
