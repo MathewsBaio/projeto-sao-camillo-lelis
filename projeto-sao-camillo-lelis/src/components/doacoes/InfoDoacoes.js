@@ -17,7 +17,7 @@ export default function InfoDoacoes() {
         <p className="container-doacoes-texto">CNPJ: 17.143.512/0001-00</p>
       </div>
 
-      <img src="/img/pix.png" />
+      <img src="/img/pix.png" alt="qr-code-doação" />
     </div>
   );
 }
