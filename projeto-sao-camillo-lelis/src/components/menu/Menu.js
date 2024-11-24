@@ -100,7 +100,7 @@ const Menu = () => {
                 <div className="menu">
                     <div className="logo">
                         <img
-                            src="/placeholders/logo.png"
+                            src="icons/logo.png"
                             alt="logo da Casa São Camillo de Lelis"
                         />
                         <h1>Casa São Camillo de Lelis</h1>
