@@ -30,11 +30,9 @@ export default function Card({ titulo, paragrafo, img }) {
               transform: "rotateX(360deg)",
               transformStyle: "flat",
               transition: "none",
-              backgroundImage: `url(${img})`,
             }
           : {
               transformStyle: "preserve-3d",
-              backgroundImage: `url(${img})`,
             }
       }
     >

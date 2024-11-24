@@ -1,7 +1,7 @@
 .card {
   width: 30vw;
   min-height: 40vh;
-  background-image: url("../../public/backgrounds/sobrenos.jpg");
+  background-image: url("../../public/img/lar.jpg");
   color: #f7f7f7;
   display: flex;
   align-items: center;
@@ -79,6 +79,10 @@
     height: auto;
 
     gap: 1.5rem;
+  }
+
+  .cardsMobile {
+    display: flex;
   }
 
   .cards-line {

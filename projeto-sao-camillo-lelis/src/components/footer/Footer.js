@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="container-footer">
       <div className="footer-info">
         <div className="footer-logo">
-          <img src="/placeholders/logo.png" />
+          <img src="/icons/logo.png" />
         </div>
         <div>
           “Nosso compromisso é oferecer acolhimento integral às pessoas em
