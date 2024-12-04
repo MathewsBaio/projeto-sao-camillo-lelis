@@ -103,7 +103,7 @@ const Menu = () => {
                             src="icons/logo.png"
                             alt="logo da Casa São Camillo de Lelis"
                         />
-                        <h1>Casa São Camillo de Lelis</h1>
+                        <h1>Casa São Camilo de Lelis</h1>
                     </div>
                     <Nav />
                 </div>

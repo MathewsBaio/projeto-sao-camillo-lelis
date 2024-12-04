@@ -19,7 +19,7 @@ export default function FooterNav() {
         </li>
         <li>
           <a className="btn" href="#doar">
-            Doe AGORA
+            Doe Agora
           </a>
         </li>
       </dl>
