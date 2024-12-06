@@ -1,4 +1,8 @@
 export default function InfoDoacoes() {
+  const isMobile = () => {
+    return window.innerWidth <= 768;
+  };
+
   return (
     <div className="container-doacoes" id="doar">
       <div className="container-doacoes-info">
@@ -6,9 +10,9 @@ export default function InfoDoacoes() {
           Ajude a transformar vidas com a sua doação!
         </h1>
         <p className="container-doacoes-texto">
-          Acesse o App da sua instituição financeira e faça a leitura do QR Code
-          ao lado e participe dessa causa solidária. Você também pode realizar
-          depósitos, pix ou transferência para a conta abaixo:
+          {isMobile
+            ? "Realize uma doação para a conta abaixo e participe dessa causa solidária:"
+            : "Acesse o App da sua instituição financeira e faça a leitura do QR Code ao lado e participe dessa causa solidária. Você também pode realizar depósitos, pix ou transferência para a conta abaixo:"}
         </p>
         <p className="container-doacoes-texto">
           Banco do Brasil - Agência: 2995-5

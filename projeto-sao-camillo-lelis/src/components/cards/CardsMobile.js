@@ -34,7 +34,7 @@ export default function CardsMobile() {
   ];
 
   return (
-    <div className="cardsMobile">
+    <div className="cardsMobile" id="programas-mobile">
       <Swiper
         modules={[Navigation, Pagination]}
         navigation
